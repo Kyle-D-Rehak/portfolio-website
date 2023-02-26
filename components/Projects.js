@@ -15,29 +15,29 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4 text-gray-700">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           <ProjectItem
             title="Example 1"
             tech="React JS"
-            bgImg={project1}
+            bgImg={project4}
             projectUrl="/wheresscorpion"
           />
           <ProjectItem
             title="Example 2"
             tech="React JS"
-            bgImg={project2}
+            bgImg={project1}
             projectUrl="/wheresscorpion"
           />
           <ProjectItem
             title="Example 3"
             tech="React JS"
-            bgImg={project3}
+            bgImg={project2}
             projectUrl="/wheresscorpion"
           />
           <ProjectItem
             title="example4"
             tech="React JS"
-            bgImg={project4}
+            bgImg={project3}
             projectUrl="/wheresscorpion"
           />
         </div>
