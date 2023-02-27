@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import project4 from "../public/assets/projects/project4.png";
+import project2 from "../public/assets/projects/project2.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { HiChevronDoubleLeft } from "react-icons/hi";
 import Link from "next/link";
 
-const project1 = () => {
+const project3 = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -14,11 +14,11 @@ const project1 = () => {
           className="absolute z-[1]"
           fill="true"
           style={{ objectFit: "cover" }}
-          src={project4}
+          src={project2}
           alt=""
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] text-[#ecf0f3] px-6 z-10">
-          <h2 className="py-2">Project 1</h2>
+          <h2 className="py-2">Project 3</h2>
           <h3>React JS / Next JS / Tailwind</h3>
         </div>
       </div>
@@ -64,7 +64,7 @@ const project1 = () => {
           </div>
         </div>
         <div className="flex justify-center py-6 col-span-5">
-          <Link href="/#projectone">
+          <Link href="/#projectthree">
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
               <HiChevronDoubleLeft size={30} className="text-[#5651e5]" />
             </div>
@@ -75,4 +75,4 @@ const project1 = () => {
   );
 };
 
-export default project1;
+export default project3;
