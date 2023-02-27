@@ -11,10 +11,10 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto py-16 px-6 md:px-12">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5] mt-8">
           Projects
         </p>
-        <h2 className="py-4 text-gray-700">What I've Built</h2>
+        <h2 className="py-4 text-gray-700">What I&apos;ve Built</h2>
         <div className="grid lg:grid-cols-2 gap-8">
           <ProjectItem
             id="projectone"

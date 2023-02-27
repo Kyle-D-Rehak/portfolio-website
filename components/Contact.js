@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto pt-16 w-full px-6 md:px-12">
-        <p className="text-xl tracking0widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking0widest uppercase text-[#5651e5] mt-8">
           Contact
         </p>
         <h2 className="py-4 text-gray-700">Get In Touch</h2>
@@ -29,7 +29,7 @@ const Contact = () => {
                 <p className="py-1">Front-End Developer</p>
                 <p className="py-2">
                   Available for freelance or full-time positions. Contact me,
-                  let's talk!
+                  let&apos;s talk!
                 </p>
               </div>
               <div className="mt-auto">

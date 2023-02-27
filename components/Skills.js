@@ -3,9 +3,9 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2 px-6 md:px-12">
+    <div id="skills" className="w-full lg:h-screen py-16 px-6 md:px-12">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#5651e5] mt-8">
           Skills
         </p>
         <h2 className="py-4 text-gray-700">What I Can Do</h2>
