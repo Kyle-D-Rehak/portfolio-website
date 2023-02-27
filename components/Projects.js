@@ -20,7 +20,7 @@ const Projects = () => {
             title="Example 1"
             tech="React JS"
             bgImg={project4}
-            projectUrl="/wheresscorpion"
+            projectUrl="/project1"
           />
           <ProjectItem
             title="Example 2"
