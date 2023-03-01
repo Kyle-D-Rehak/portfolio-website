@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-archivo {
+  font-family: "Archivo", sans-serif;
+}
+
 html {
   scroll-behavior: smooth !important;
+  font-family: "Archivo", sans-serif;
+  color: #2c2c2c;
 }
 
 #projects div {
@@ -12,31 +18,28 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-[#f8f8f8] text-[#2c2c2c] tracking-wide;
   }
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
+.leading-verytight {
+  line-height: 0.725;
+}
 
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
-  }
+.font-stroke-sm {
+  color: #f8f8f8;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #2c2c2c;
+}
 
-  h2 {
-    @apply text-3xl sm:text-4xl;
-  }
+.font-stroke-md {
+  color: #f8f8f8;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: #2c2c2c;
+}
 
-  li {
-    @apply cursor-pointer;
-  }
-
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
-  }
+.font-stroke-lg {
+  color: #f8f8f8;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2c2c2c;
 }

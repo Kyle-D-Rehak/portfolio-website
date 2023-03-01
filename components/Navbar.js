@@ -9,8 +9,8 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [navBg, setNavBg] = useState("#f8f8f8");
+  const [linkColor, setLinkColor] = useState("#2c2c2c");
   const router = useRouter();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Navbar = () => {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
-      setNavBg("#ecf0f3");
+      setNavBg("#f8f8f8");
       setLinkColor("#1f2937");
     }
   }, [router]);
@@ -49,38 +49,38 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
         <Link href="/">
-          <p className="text-[#5651e5] text-4xl font-bold tracking-tight">{`<KR/>`}</p>
-          {/* <Image
-            src="/../public/assets/navLogo.png"
-            alt=""
-            width="120"
-            height="60"
-          /> */}
+          <p className="font-stroke-md text-4xl font-black ">{`<KR/>`}</p>
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-5 text-sm font-black uppercase hover:underline">
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-5 text-sm font-black uppercase hover:underline">
+                About
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-5 text-sm font-black uppercase hover:underline">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-5 text-sm font-black uppercase hover:underline">
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-5 text-sm font-black uppercase hover:underline">
                 Contact
               </li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu style={{ color: `${linkColor}` }} size={30} />
+            <AiOutlineMenu style={{ color: "#2c2c2c" }} size={30} />
           </div>
         </div>
       </div>
